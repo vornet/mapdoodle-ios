@@ -1,0 +1,6 @@
+framework module Pods_MapDoodle_Tests {
+  umbrella header "Pods-MapDoodle_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

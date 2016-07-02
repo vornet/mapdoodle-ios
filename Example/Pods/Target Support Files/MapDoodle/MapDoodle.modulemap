@@ -1,0 +1,6 @@
+framework module MapDoodle {
+  umbrella header "MapDoodle-umbrella.h"
+
+  export *
+  module * { export * }
+}
