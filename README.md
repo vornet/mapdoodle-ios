@@ -1,6 +1,6 @@
 # MapDoodle
 
-[![CI Status](http://img.shields.io/travis/Vorn Mom/MapDoodle.svg?style=flat)](https://travis-ci.org/Vorn Mom/MapDoodle)
+[![CI Status](http://img.shields.io/travis/vornet/mapdoodle-ios.svg?style=flat)](https://travis-ci.org/vornet/mapdoodle-ios)
 [![Version](https://img.shields.io/cocoapods/v/MapDoodle.svg?style=flat)](http://cocoapods.org/pods/MapDoodle)
 [![License](https://img.shields.io/cocoapods/l/MapDoodle.svg?style=flat)](http://cocoapods.org/pods/MapDoodle)
 [![Platform](https://img.shields.io/cocoapods/p/MapDoodle.svg?style=flat)](http://cocoapods.org/pods/MapDoodle)

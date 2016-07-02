@@ -16,6 +16,7 @@ public class GeoPathAnimator {
   private var animationContext: AnimationContext = AnimationContext()
   private var speed: Double = 0.0
   private var mapView: MKMapView
+  private var animationTimer: NSTimer!
   
   init(mapView: MKMapView, pathToAnimate: GeoPath, speed: Double) {
     self.mapView = mapView
@@ -88,7 +89,7 @@ public class GeoPathAnimator {
   }
   
   func start() {
-      var animationTimer = NSTimer.scheduledTimerWithTimeInterval(updateRate / 1000.0, target: self,
+      self.animationTimer = NSTimer.scheduledTimerWithTimeInterval(updateRate / 1000.0, target: self,
                                                                   selector: #selector(GeoPathAnimator.animate), userInfo: nil, repeats: true)
   }
   
