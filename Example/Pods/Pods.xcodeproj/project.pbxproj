@@ -12,10 +12,19 @@
 		112614F21939902B59102E6E876ADCBC /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A414C35360A25163AA8D7D17AB68C77 /* RaisesException.swift */; };
 		135B6326D35C977854AA0C12B3F6CB7D /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E4E84747227302312F1E22D114789 /* DSL.swift */; };
 		13CC849FA70CADF802470B6A90DCDF79 /* AllPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AD566EC508F35AEBD09410C38B0113 /* AllPass.swift */; };
+		1636C54F1D5510C300977CB7 /* MathUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1636C54E1D5510C300977CB7 /* MathUtil.swift */; };
+		1636C5511D55133F00977CB7 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1636C5501D55133F00977CB7 /* Point.swift */; };
+		168028101D5137A90016CD49 /* AnimatedPathDoodleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1680280F1D5137A90016CD49 /* AnimatedPathDoodleStyle.swift */; };
+		168028121D513AF40016CD49 /* Doodle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168028111D513AF40016CD49 /* Doodle.swift */; };
+		168028141D513CCA0016CD49 /* DoodleContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168028131D513CCA0016CD49 /* DoodleContext.swift */; };
+		168028161D513F9F0016CD49 /* LocationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168028151D513F9F0016CD49 /* LocationUtil.swift */; };
+		168028181D516EA70016CD49 /* PathDoodle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168028171D516EA70016CD49 /* PathDoodle.swift */; };
+		1680281A1D516EBA0016CD49 /* PathDoodleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168028191D516EBA0016CD49 /* PathDoodleStyle.swift */; };
+		16C4C5841D3BDCED00F92AE8 /* AnimatedPathDoodle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C4C5831D3BDCED00F92AE8 /* AnimatedPathDoodle.swift */; };
 		16F847CE1D284AD8003E9EEF /* GeoPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F847CA1D284AD8003E9EEF /* GeoPath.swift */; };
 		16F847CF1D284AD8003E9EEF /* GeoPathAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F847CB1D284AD8003E9EEF /* GeoPathAnimator.swift */; };
 		16F847D01D284AD8003E9EEF /* GeoPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F847CC1D284AD8003E9EEF /* GeoPoint.swift */; };
-		16F847D11D284AD8003E9EEF /* MapDoodle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F847CD1D284AD8003E9EEF /* MapDoodle.swift */; };
+		16F847D11D284AD8003E9EEF /* MapDoodler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F847CD1D284AD8003E9EEF /* MapDoodler.swift */; };
 		1736DD3A3F5C34283AF4D0CC9DDD447B /* NSString+QCKSelectorName.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A83F0092F039C6F7AFC5D9D1E55E3BE /* NSString+QCKSelectorName.m */; };
 		1928E75B4699BE67C60E395F579ADED2 /* Pods-MapDoodle_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32EC5135348CA52E6674C6B6CC477357 /* Pods-MapDoodle_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1BF6D87C32EC3E42580750EE567628FA /* QuickSelectedTestSuiteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03925EC2DD9F80DCD0C2E5301B52DC9C /* QuickSelectedTestSuiteBuilder.swift */; };
@@ -143,10 +152,19 @@
 		0F2748FABD1661E3A75F8B07E115CF96 /* BeNil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeNil.swift; path = Sources/Nimble/Matchers/BeNil.swift; sourceTree = "<group>"; };
 		12FD8C45CF9591F32C21657E578112C9 /* Quick-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Quick-prefix.pch"; sourceTree = "<group>"; };
 		14E1DC94DD47A6F91084F3EAA92AF552 /* Quick.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Quick.modulemap; sourceTree = "<group>"; };
+		1636C54E1D5510C300977CB7 /* MathUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathUtil.swift; sourceTree = "<group>"; };
+		1636C5501D55133F00977CB7 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		1680280F1D5137A90016CD49 /* AnimatedPathDoodleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedPathDoodleStyle.swift; sourceTree = "<group>"; };
+		168028111D513AF40016CD49 /* Doodle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Doodle.swift; sourceTree = "<group>"; };
+		168028131D513CCA0016CD49 /* DoodleContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoodleContext.swift; sourceTree = "<group>"; };
+		168028151D513F9F0016CD49 /* LocationUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationUtil.swift; sourceTree = "<group>"; };
+		168028171D516EA70016CD49 /* PathDoodle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathDoodle.swift; sourceTree = "<group>"; };
+		168028191D516EBA0016CD49 /* PathDoodleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathDoodleStyle.swift; sourceTree = "<group>"; };
+		16C4C5831D3BDCED00F92AE8 /* AnimatedPathDoodle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedPathDoodle.swift; sourceTree = "<group>"; };
 		16F847CA1D284AD8003E9EEF /* GeoPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoPath.swift; sourceTree = "<group>"; };
 		16F847CB1D284AD8003E9EEF /* GeoPathAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoPathAnimator.swift; sourceTree = "<group>"; };
 		16F847CC1D284AD8003E9EEF /* GeoPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoPoint.swift; sourceTree = "<group>"; };
-		16F847CD1D284AD8003E9EEF /* MapDoodle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDoodle.swift; sourceTree = "<group>"; };
+		16F847CD1D284AD8003E9EEF /* MapDoodler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDoodler.swift; sourceTree = "<group>"; };
 		18D110A87EF135293B27C04BD720A8E8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A899F41BD5C498579FBFB16A36A6D56 /* MapDoodle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MapDoodle.modulemap; sourceTree = "<group>"; };
 		1C274B7F1FAB343D1ABB8A1092A522B2 /* MapDoodle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapDoodle-umbrella.h"; sourceTree = "<group>"; };
@@ -573,7 +591,16 @@
 				16F847CA1D284AD8003E9EEF /* GeoPath.swift */,
 				16F847CB1D284AD8003E9EEF /* GeoPathAnimator.swift */,
 				16F847CC1D284AD8003E9EEF /* GeoPoint.swift */,
-				16F847CD1D284AD8003E9EEF /* MapDoodle.swift */,
+				16F847CD1D284AD8003E9EEF /* MapDoodler.swift */,
+				16C4C5831D3BDCED00F92AE8 /* AnimatedPathDoodle.swift */,
+				1680280F1D5137A90016CD49 /* AnimatedPathDoodleStyle.swift */,
+				168028111D513AF40016CD49 /* Doodle.swift */,
+				168028131D513CCA0016CD49 /* DoodleContext.swift */,
+				168028151D513F9F0016CD49 /* LocationUtil.swift */,
+				168028171D516EA70016CD49 /* PathDoodle.swift */,
+				168028191D516EBA0016CD49 /* PathDoodleStyle.swift */,
+				1636C54E1D5510C300977CB7 /* MathUtil.swift */,
+				1636C5501D55133F00977CB7 /* Point.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -828,9 +855,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				16F847CF1D284AD8003E9EEF /* GeoPathAnimator.swift in Sources */,
+				168028181D516EA70016CD49 /* PathDoodle.swift in Sources */,
+				168028141D513CCA0016CD49 /* DoodleContext.swift in Sources */,
+				168028161D513F9F0016CD49 /* LocationUtil.swift in Sources */,
+				1636C5511D55133F00977CB7 /* Point.swift in Sources */,
+				168028101D5137A90016CD49 /* AnimatedPathDoodleStyle.swift in Sources */,
 				16F847CE1D284AD8003E9EEF /* GeoPath.swift in Sources */,
+				16C4C5841D3BDCED00F92AE8 /* AnimatedPathDoodle.swift in Sources */,
 				16F847D01D284AD8003E9EEF /* GeoPoint.swift in Sources */,
-				16F847D11D284AD8003E9EEF /* MapDoodle.swift in Sources */,
+				1636C54F1D5510C300977CB7 /* MathUtil.swift in Sources */,
+				16F847D11D284AD8003E9EEF /* MapDoodler.swift in Sources */,
+				1680281A1D516EBA0016CD49 /* PathDoodleStyle.swift in Sources */,
+				168028121D513AF40016CD49 /* Doodle.swift in Sources */,
 				A293D279C1557B3024F181DAED3160A2 /* MapDoodle-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1037,7 +1073,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MapDoodle/MapDoodle-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MapDoodle/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MapDoodle/MapDoodle.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1169,7 +1205,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MapDoodle/MapDoodle-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MapDoodle/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MapDoodle/MapDoodle.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;

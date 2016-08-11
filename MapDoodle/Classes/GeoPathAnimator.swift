@@ -66,7 +66,7 @@ public class GeoPathAnimator {
       animationContext.drawPointList.append(CLLocationCoordinate2D(latitude: la, longitude: lo))
 
       let polyline = MKPolyline(coordinates: &animationContext.drawPointList, count: animationContext.drawPointList.count)
-      polyline.title = MapDoodle.ANIMATE_OVERLAY_ID
+      polyline.title = MapDoodler.ANIMATE_OVERLAY_ID
       if(animationContext.lastPolyline != nil) {
         mapView.removeOverlay(animationContext.lastPolyline)
       }
