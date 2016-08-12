@@ -21,7 +21,7 @@ public class MapDoodler: NSObject, MKMapViewDelegate {
   static let TRACE_OVERLAY_ID = "trace"
   static let ANIMATE_OVERLAY_ID = "animate"
   
-  var lastCamera: MKMapCamera?
+  var lastCamera: MKMapCamera!
   
   public init(mapView: MKMapView, refreshRate: Int) {
     self.mapView = mapView
@@ -49,7 +49,7 @@ public class MapDoodler: NSObject, MKMapViewDelegate {
   public func zoomFitAllDoodles(padding: Int, shouldAnimate: Bool) {
     var allPaths: [GeoPoint] = []
     
-    for var doodle in doodles {
+    for doodle in doodles {
       allPaths.appendContentsOf(doodle.points)
     }
     
@@ -63,7 +63,7 @@ public class MapDoodler: NSObject, MKMapViewDelegate {
   }
   
   public func zoomToFitDoodle(doodle: Doodle, padding: Int, shouldAnimate: Bool, shouldChangeBearing: Bool) {
-    var doodleIndex: Int = doodles.indexOf({ $0 === doodle })!
+    let doodleIndex: Int = doodles.indexOf({ $0 === doodle })!
     if doodleIndex >= 0 {
       var bearing: Float = 0
       if shouldChangeBearing {
@@ -72,7 +72,7 @@ public class MapDoodler: NSObject, MKMapViewDelegate {
         mapView.camera.pitch = CGFloat(bearing)
       }
       
-      var r = regionForGeoPath(doodle.points)
+      let r = regionForGeoPath(doodle.points)
       self.mapView.setRegion(r, animated: false)
       
       let newCamera = mapView.camera.copy() as! MKMapCamera
@@ -160,7 +160,7 @@ public class MapDoodler: NSObject, MKMapViewDelegate {
   
   public func draw() {
     if !isPausing {
-      var doodleContext = DoodleContext(mapView: self.mapView)
+      let doodleContext = DoodleContext(mapView: self.mapView)
       for doodle in self.doodles {
         doodle.draw(doodleContext)
       }

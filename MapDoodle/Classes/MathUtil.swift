@@ -20,8 +20,8 @@ public class MathUtil {
     for i in 0 ..< path.count-1 {
       let distanceBetweenPoints = distanceBetweenTwoPoints(path[i], point1: path[i+1])
       
-      var currentDistance: Double = 0.0
-      for currentDistance in 0.stride(to: distanceBetweenPoints, by: distanceStep) {
+      let currentDistance: Double = 0.0
+      for currentDistance in startDistance.stride(to: distanceBetweenPoints, by: distanceStep) {
         let point: Point = pointBetweenTwoPoints(path[i], point1: path[i + 1], distance: currentDistance)
         pointsList.append(point)
       }
