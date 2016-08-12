@@ -35,13 +35,13 @@ public class MapDoodler: NSObject, MKMapViewDelegate {
   }
   
   public func addPathDoodle(style: PathDoodleStyle, points: [GeoPoint]) -> Doodle {
-    var doodle = PathDoodle(style: style, points: points)
+    let doodle = PathDoodle(style: style, points: points)
     self.doodles.append(doodle)
     return doodle
   }
   
   public func addAnimatedPathDoodle(style: AnimatedPathDoodleStyle, points: [GeoPoint]) -> Doodle {
-    var doodle = AnimatedPathDoodle(style: style, points: points, refreshRate: refreshRate)
+    let doodle = AnimatedPathDoodle(style: style, points: points, refreshRate: refreshRate)
     self.doodles.append(doodle)
     return doodle
   }
@@ -54,7 +54,7 @@ public class MapDoodler: NSObject, MKMapViewDelegate {
     }
     
     // Hacky: Using setRegion(animated: false) to capture the final position for lastCamera.
-    var oldCamera = mapView.camera.copy() as! MKMapCamera
+    let oldCamera = mapView.camera.copy() as! MKMapCamera
     self.mapView.setRegion(regionForGeoPath(allPaths), animated: false)
     lastCamera = self.mapView.camera.copy() as! MKMapCamera
     self.mapView.setCamera(oldCamera, animated: false)
@@ -75,7 +75,7 @@ public class MapDoodler: NSObject, MKMapViewDelegate {
       var r = regionForGeoPath(doodle.points)
       self.mapView.setRegion(r, animated: false)
       
-      var newCamera = mapView.camera.copy() as! MKMapCamera
+      let newCamera = mapView.camera.copy() as! MKMapCamera
       newCamera.heading = CLLocationDirection(bearing)
       
       if lastCamera != nil {
@@ -83,7 +83,7 @@ public class MapDoodler: NSObject, MKMapViewDelegate {
       }
       
       // Hacky: Using setCamera(animated: false) to capture the final position for lastCamera.
-      var oldCamera = mapView.camera.copy() as! MKMapCamera
+      let oldCamera = mapView.camera.copy() as! MKMapCamera
       mapView.setCamera(newCamera, animated: false)
       lastCamera = self.mapView.camera.copy() as! MKMapCamera
       self.mapView.setCamera(oldCamera, animated: false)

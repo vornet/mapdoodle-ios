@@ -18,11 +18,11 @@ public class MathUtil {
     
     var startDistance: Double = 0
     for i in 0 ..< path.count-1 {
-      var distanceBetweenPoints = distanceBetweenTwoPoints(path[i], point1: path[i+1])
+      let distanceBetweenPoints = distanceBetweenTwoPoints(path[i], point1: path[i+1])
       
-      var currentDistance: Double
-      for currentDistance = startDistance; currentDistance < distanceBetweenPoints; currentDistance += distanceStep {
-        var point: Point = pointBetweenTwoPoints(path[i], point1: path[i + 1], distance: currentDistance)
+      var currentDistance: Double = 0.0
+      for currentDistance in 0.stride(to: distanceBetweenPoints, by: distanceStep) {
+        let point: Point = pointBetweenTwoPoints(path[i], point1: path[i + 1], distance: currentDistance)
         pointsList.append(point)
       }
       startDistance = currentDistance - distanceBetweenPoints
@@ -38,13 +38,13 @@ public class MathUtil {
   }
   
   class func pointBetweenTwoPoints(point0: Point, point1: Point, distance: Double) -> Point{
-    var v0: Double = point1.x  - point0.x
-    var v1: Double = point1.y - point0.y
-    var vlen: Double = sqrt(v0 * v0 + v1 * v1)
-    var nv0: Double = v0 / vlen
-    var nv1: Double = v1 / vlen
-    var vl0: Double = point0.x + distance * nv0
-    var vl1: Double = point0.y + distance * nv1
+    let v0: Double = point1.x  - point0.x
+    let v1: Double = point1.y - point0.y
+    let vlen: Double = sqrt(v0 * v0 + v1 * v1)
+    let nv0: Double = v0 / vlen
+    let nv1: Double = v1 / vlen
+    let vl0: Double = point0.x + distance * nv0
+    let vl1: Double = point0.y + distance * nv1
     
     return Point(x: vl0, y: vl1)
   }
