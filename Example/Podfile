@@ -7,6 +7,6 @@ target 'MapDoodle_Example' do
     inherit! :search_paths
 
     pod 'Quick', '~> 0.8'
-  pod 'Nimble', '~> 3.0'
+  pod 'Nimble', '~> 4.1.0'
   end
 end
