@@ -17,7 +17,7 @@ public class MathUtil {
     var pointsList: [Point] = []
     
     var startDistance: Double = 0
-    for (var i = 0; i < path.count - 1; i++) {
+    for i in 0 ..< path.count-1 {
       var distanceBetweenPoints = distanceBetweenTwoPoints(path[i], point1: path[i+1])
       
       var currentDistance: Double

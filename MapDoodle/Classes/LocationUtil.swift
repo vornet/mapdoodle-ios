@@ -14,14 +14,14 @@ public class LocationUtil {
   static let ZOOM_MAX = 21
   
   class func getBearing(start: GeoPoint, end: GeoPoint) -> Double {
-    var startLat: Double = MathUtil.degreesToRadians(start.latitude)
-    var startLong: Double = MathUtil.degreesToRadians(start.longitude)
-    var endLat: Double = MathUtil.degreesToRadians(end.latitude)
-    var endLong: Double = MathUtil.degreesToRadians(end.longitude)
+    let startLat: Double = MathUtil.degreesToRadians(start.latitude)
+    let startLong: Double = MathUtil.degreesToRadians(start.longitude)
+    let endLat: Double = MathUtil.degreesToRadians(end.latitude)
+    let endLong: Double = MathUtil.degreesToRadians(end.longitude)
     
     var dLong: Double = endLong - startLong
     
-    var dPhi: Double = log(tan(endLat / 2.0 + M_PI / 4.0) / tan(startLat / 2.0 + M_PI / 4.0))
+    let dPhi: Double = log(tan(endLat / 2.0 + M_PI / 4.0) / tan(startLat / 2.0 + M_PI / 4.0))
     
     if abs(dLong) > M_PI {
       if dLong > 0.0 {
@@ -41,8 +41,8 @@ public class LocationUtil {
     var smallLong: Double = 0
     
     for point: GeoPoint in points {
-      var normLat: Double = point.latitude + 180
-      var normLong: Double = point.longitude + 180
+      let normLat: Double = point.latitude + 180
+      let normLong: Double = point.longitude + 180
       
       if normLat > bigLat {
         bigLat = normLat

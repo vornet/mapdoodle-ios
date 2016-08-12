@@ -103,8 +103,8 @@ class ViewController: UIViewController {
     let shiningSeaBikewayDoodle = mapDoodler.addAnimatedPathDoodle(pathDoodleStyle, points: shiningSeaBikewayPoints)
     let capeCodeCanalServiceRoadDoodle = mapDoodler.addAnimatedPathDoodle(pathDoodleStyle, points: capeCodeCanalServiceRoadPoints)
     
-    self.doodles = [shiningSeaBikewayDoodle, capeCodeCanalServiceRoadDoodle ]
-    self.visibleDoodle = self.doodles.count
+    doodles = [shiningSeaBikewayDoodle, capeCodeCanalServiceRoadDoodle ]
+    visibleDoodle = doodles.count
     
     mapDoodler.zoomFitAllDoodles(150, shouldAnimate: false)
     

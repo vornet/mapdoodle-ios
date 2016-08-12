@@ -89,7 +89,7 @@ public class GeoPathAnimator {
   }
   
   func start() {
-      self.animationTimer = NSTimer.scheduledTimerWithTimeInterval(updateRate / 1000.0, target: self,
+      animationTimer = NSTimer.scheduledTimerWithTimeInterval(updateRate / 1000.0, target: self,
                                                                   selector: #selector(GeoPathAnimator.animate), userInfo: nil, repeats: true)
   }
   

@@ -50,20 +50,20 @@ public class AnimatedPathDoodle : Doodle {
   
   func calculatePathPoints() {
     var path: [Point] = []
-    for var i = 0; i < points.count; i++ {
-      var geoPoint: GeoPoint = points[i]
-      var x: Double = (geoPoint.longitude + 180)
-      var y: Double = (geoPoint.latitude + 90)
+    for i in 0..<points.count {
+      let geoPoint: GeoPoint = points[i]
+      let x: Double = (geoPoint.longitude + 180)
+      let y: Double = (geoPoint.latitude + 90)
       
       path.append(Point(x: x, y: y))
     }
     
-    var speedInLatLong: Double = style.speed / 111 / 3600 / 1000 * Double(refreshRate)
+    let speedInLatLong: Double = style.speed / 111 / 3600 / 1000 * Double(refreshRate)
     
     var pointsBetweenPaths: [Point] = MathUtil.pointsBetweenPath(path, distanceStep: speedInLatLong)
     
     animationContext.points = []
-    for var i = 0; i < pointsBetweenPaths.count; i++ {
+    for i in 0..<pointsBetweenPaths.count {
       animationContext.points.append(GeoPoint(latitude: pointsBetweenPaths[i].y - 90, longitude: pointsBetweenPaths[i].x - 180))
     }
     
@@ -89,7 +89,7 @@ public class AnimatedPathDoodle : Doodle {
       }
       
       if style.tracerThickness > 0 {
-        var pathStyle = PathDoodleStyle()
+        let pathStyle = PathDoodleStyle()
         pathStyle.thickness = style.tracerThickness
         pathStyle.color = style.tracerColor
         pathStyle.zIndex = style.zIndex
@@ -107,7 +107,7 @@ public class AnimatedPathDoodle : Doodle {
     }
     
     
-    var currentPoint: GeoPoint = animationContext.points[animationContext.currentPointIndex]
+    let currentPoint: GeoPoint = animationContext.points[animationContext.currentPointIndex]
     
     animationContext.coordinates.append(CLLocationCoordinate2D(latitude: currentPoint.latitude, longitude: currentPoint.longitude))
     
@@ -119,7 +119,7 @@ public class AnimatedPathDoodle : Doodle {
     self.polyline.title = MapDoodler.ANIMATE_OVERLAY_ID
     context.mapView.addOverlay(self.polyline)
     
-    animationContext.currentPointIndex++
+    animationContext.currentPointIndex += 1
     
     if animationContext.currentPointIndex >= animationContext.points.count {
       animationContext.coordinates.removeAll()
