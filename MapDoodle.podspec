@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MapDoodle'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'iOS library to create common map animations'
 
 # This description is used to generate tags and improve search results.
