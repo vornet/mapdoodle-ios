@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     pathDoodleStyle.color = UIColor.blueColor()
     pathDoodleStyle.tracerThickness = 5.0
     pathDoodleStyle.tracerColor = UIColor.grayColor()
-    pathDoodleStyle.speed = 60.0
+    pathDoodleStyle.speed = 250.0
   
     // Shining Sea Bikeway
     let shiningSeaBikewayPoints: [GeoPoint] = [
